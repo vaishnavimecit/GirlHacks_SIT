@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body>
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=010408300575028600841:m1xbmebqfvn"
+    ></script>
+    <div class="gcse-search"></div>
+    <div class="search-box">
+      <h1><label for="searchterm">Find hospitals in the state...</label></h1>
+      <input
+        class="search-txt"
+        type="text"
+        id="searchterm"
+        name="searchengine"
+        placeholder="NY, NJ, PA,.."
+      />
+      <br />
+      <button type="submit" id="tab2" onclick="myFunction()">
+        <i class="fa fa-search">Search</i>
+      </button>
+    </div>
+    <p id="demo"></p>
+    <p id="results"></p>
+    <script>
+      function myFunction() {
+        var q = $("#searchterm").val();
+        $("#demo").append("Hospitals in ", q, " are:");
+        $("#results").append("Test");
+        $.getJSON(
+          "http://www.communitybenefitinsight.org/api/get_hospitals.php?state=",
+          q,
+          function (data) {
+            $.each(data.query.search, function (i, item) {
+              $("#results").append(
+                "<div>" + item.name <
+                  br >
+                  +item.street_address +
+                    item.city +
+                    item.zip_code +
+                    item.county +
+                    item.hospital_bed_size +
+                    "<br><br></div>"
+              );
+            });
+          }
+        );
+      }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudfare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
