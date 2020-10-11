@@ -1,0 +1,99 @@
+<!–– Jenna Wynd––>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Archivo Narrow' rel='stylesheet'>
+       <link href="https://fonts.googleapis.com/css?family=Caesar+Dressing|Gothic+A1&display=swap" rel="stylesheet">
+        </head>
+        <header>
+            <a href="index.html"><img class = "icon" src= "images/girlhacklogo.png" alt="Logo">hello</a>
+            <a id="menu" class="header__menu"><img class="hamMenu" src= "images/hamMenu.png" alt="Menu"></a>
+            <div class="pages__list">
+                    <h4 class="pages__item"><a href="url">Info</a></h4>
+                    <h4 class="pages__item"><a href="url">Activities</a></h4>
+                    <h4 class="pages__item"><a href="Donate.html">Donate</a></h4>
+                    <h4 class="pages__item"><img class = "searchbutton" src= "images/search.png" alt="search button"></a></h4>
+                  </div>
+          </header>
+      <nav id="drawer" class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="http://www.espn.com">Search<img class = "searchbutton" src= "images/search.png" alt="search button"></a></li>
+            <li class="nav__item">Info</a></li>
+            <li class="nav__item">Activities</a></li>
+            <li class="nav__item">Donate</a></li>
+    </nav>
+  <body>
+    <div id="page-container">
+        <div id="content-wrap">
+      <div class="hospitalbox"><h2><a href="FindHospital.html">Find A Hospital</a></h2></div>
+      <table>
+          <tr>
+              <td><div class="donatebox">
+                <h2><a href="HospitalSignUp.html">Hopital Sign Up</a></h2>
+                </div></td>
+                <td>
+                    <div class="donatebox">
+                        <h2><a href="PersonSignUp.html">Donate to Hospital</a></h2>
+                    </div>
+                </td>
+          </tr>
+          <tr>
+              <td><p class="tablep">Sign up to receive donated PPE.</p></td>
+              <td><p class="tablep">Sign up to donate to a hospital of your choosing.</p></td>
+          </tr>
+        </table>
+        </div>
+        <script>
+        
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDtXc3m65KovrD-1_FX0fFuv1vnERkMyRI",
+    authDomain: "staysafeinquarintine.firebaseapp.com",
+    databaseURL: "https://staysafeinquarintine.firebaseio.com",
+    projectId: "staysafeinquarintine",
+    storageBucket: "staysafeinquarintine.appspot.com",
+    messagingSenderId: "936613508468",
+    appId: "1:936613508468:web:d5b186fddb005743dce821",
+    measurementId: "G-XHVYTJ2Q45"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  <footer>
+  	<p><u>Contact Us</u></p>
+  </footer>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+</body>
+</html>

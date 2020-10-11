@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>grid</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+          <link href='https://fonts.googleapis.com/css?family=Archivo Narrow' rel='stylesheet'>
+           <link href="https://fonts.googleapis.com/css?family=Caesar+Dressing|Gothic+A1&display=swap" rel="stylesheet">
+            </head>
+      <header>
+        <a href="index.html"><img class = "icon" src= "images/girlhacklogo.png" alt="Logo"></a>
+        <a id="menu" class="header__menu"><img class="hamMenu" src= "images/hamMenu.png" alt="Menu"></a>
+        <div class="pages__list">
+                <h4 class="pages__item"><a href="url">Info</a></h4>
+                <h4 class="pages__item"><a href="url">Activities</a></h4>
+                <h4 class="pages__item"><a href="Donate.html">Donate</a></h4>
+                <h4 class="pages__item"><img class = "searchbutton" src= "images/search.png" alt="search button"></a></h4>
+              </div>
+      </header>
+      <body>
+          <div id="page-container">
+              <div id="content-wrap">
+      <div class = "form">
+        <form method = "post">
+            <div>
+                <div>
+                    <label for="hospital name">Hospital Name</label><br>
+                    <input type="text" id = "hospitalname" name = "hospital_name"placeholder = "Hoboken Hospital">
+                    
+                </div>
+                <div>
+                    <label for="city">City</label><br>
+                    <input type="text" id = "city" name = "hospital_city" placeholder = "Hoboken">
+                </div>
+                <div>
+                    <form>
+                        <label for="state">State</label><br>
+                        <select id = "state" name = "hospital_state">
+                            <option value = "AL">AL</option>
+                            <option value = "AK">AK</option>
+                            <option value = "AZ">AZ</option>
+                            <option value = "AR">AR</option>
+                            <option value = "CA">CA</option>
+                            <option value = "CO">CO</option>
+                            <option value = "CT">CT</option>
+                            <option value = "DE">DE</option>
+                            <option value = "FL">FL</option>
+                            <option value = "GA">GA</option>
+                            <option value = "HI">HI</option>
+                            <option value = "IA">ID</option>
+                            <option value = "ID">IL</option>
+                            <option value = "IL">IN</option>
+                            <option value = "IN">IA</option>
+                            <option value = "KS">KS</option>
+                            <option value = "KY">KY</option>
+                            <option value = "LA">LA</option>
+                            <option value = "MA">ME</option>
+                            <option value = "MD">MD</option>
+                            <option value = "ME">MA</option>
+                            <option value = "MI">MI</option>
+                            <option value = "MN">MN</option>
+                            <option value = "MO">MS</option>
+                            <option value = "MS">MO</option>
+                            <option value = "MT">MT</option>
+                            <option value = "NC">NC</option>
+                            <option value = "ND">ND</option>
+                            <option value = "NE">NE</option>
+                            <option value = "NH">NH</option>
+                            <option value = "NJ">NJ</option>
+                            <option value = "NM">NM</option>
+                            <option value = "NV">NV</option>
+                            <option value = "NY">NY</option>
+                            <option value = "OH">OH</option>
+                            <option value = "OK">OK</option>
+                            <option value = "OR">OR</option>
+                            <option value = "PA">PA</option>
+                            <option value = "RI">RI</option>
+                            <option value = "SC">SC</option>
+                            <option value = "SD">SD</option>
+                            <option value = "TN">TN</option>
+                            <option value = "TX">TX</option>
+                            <option value = "UT">UT</option>
+                            <option value = "VA">VA</option>
+                            <option value = "VT">VT</option>
+                            <option value = "WA">WA</option>
+                            <option value = "WI">WI</option>
+                            <option value = "WV">WV</option>
+                            <option value = "WY">WY</option>
+                        </select>
+                    </form>    
+                </div>
+                <div>
+                    <label for="zip">Zip Code</label><br>
+                    <input type ="text" id = "zip" name = "hospital_zip" placeholder = "07030">
+                </div>
+                <div>
+                    <label for="cases"> Number of Received Covid Cases</label><br>
+                    <input type = "number" id = "cases" name = "hospital_cases"placeholder = "0"><br>
+                    <label for="stock estimate"> Estimated of Date More PPE Are Needed </label><br>
+                    <input type = "date" id = "stockdate" name = "hospital_date">
+                    <form>
+                        <label for="urgency">Urgency of PPE Needed</label><br>
+                        <select id = "urgencyList" name = "hospital_urgency">
+                            <option value = "low">Low</option>
+                            <option value = "medium">Medium</option>
+                            <option value = "high"> High</option>
+                            <option value = "critical">Critical</option>
+                        </select>
+                    </form><br>
+                </div>
+
+                <div>
+                    <label for="items">Items Needed</label><br>
+                    <input type = "text" id = "items" name = "hospital_items" placeholder = "N95 Masks, Gloves, Scrubs, etc."><br>
+                    <label for="numItems">Number of Items Needed</label><br>
+                    <input type ="text" id = "numItems" name = "hospital_numItems" placeholder = "Number of Items">
+                </div>
+                <div>
+                    <label for="addl">Additional Instructions</label><br>
+                    <input type = "addl" id = "addl" name = hospital_addl placeholder = "Provide any additional instructions or information that will make the donation process easier (Optional)">
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type = "email" id = "email" name = "hospital_email" placeholder = "name@domain.com"><br>
+                    <label for="number">Phone Number</label><br>
+                    <input type = "text" id = "number" name = "hospital_number" placeholder = "123-456-7890 (Optional)"><br>
+                </div>
+                <div>
+                    <label for="password">Password</label><br>
+                    <input type = "password" id = "password" name = "hospital_password" placeholder = "password"><br>
+                    <label for="confirmpassword">Confirm Password</label><br>
+                    <input type = "password" id = "confirmpassword" name = "hospital_confirmpassword" placeholder = "password"><br>
+                </div>
+            </div>
+        </form>
+    </div>
+<div class="button">
+    <button type = "submit"> Sign up</button>
+</div>
+</div>
+<script>
+    let saveFile = () => {
+    	
+        // Get the data from each element on the form.
+    	const hospitalname = document.getElementById('hospitalname');
+        const city = document.getElementById('city');
+        const state = document.getElementById('state');
+        const country = document.getElementById('selCountry');
+        const zip = document.getElementById('zip');
+        const cases = document.getElementById('cases');
+        const urgencyList = document.getElementById('urgencyList');
+        const stockdate = document.getElementById('stockdate');
+        const items = document.getElementById('items');
+        const numItems = document.getElementById('numItems');
+        const addl = document.getElementById('addl');
+        const email = document.getElementById('email');
+        const number = document.getElementById('number');
+        const password = document.getElementById('password');
+        const confirmpassword = document.getElementById('confirmpassword');
+        
+        // This variable stores all the data.
+        let data = 
+            '\r Hospital Name: ' + hospitalname.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ' + 
+            'City: ' +city.value + ' \r\n ';
+        
+        // Convert the text to BLOB.
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName = 'formData.txt';	   // The file to save the data.
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
+    }
+</script>
+
+<footer>
+    <p><u>Contact Us</u></p>
+</footer>
+</div>
+</body>
+</html>

@@ -34,10 +34,11 @@
       function myFunction() {
         var q = $("#searchterm").val();
         $("#demo").append("Hospitals in ", q, " are:");
-        $("#results").append("Test");
+        $("#results").append("");
         $.getJSON(
-          "http://www.communitybenefitinsight.org/api/get_hospitals.php?state=",
-          q,
+          "http://www.communitybenefitinsight.org/api/get_hospitals.php?state=" +
+            q,
+
           function (data) {
             $.each(data.query.search, function (i, item) {
               $("#results").append(
@@ -53,6 +54,7 @@
             });
           }
         );
+        console.log(data);
       }
     </script>
 
